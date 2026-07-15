@@ -10,6 +10,10 @@ type Person = {
   };
 };
 
+function greet(name: string, age: number) {
+  console.log(`Hello, ${name}! You are ${age} years old.`);
+}
+
 const person: Person = {
   name: "John Doe",
   age: 30,
@@ -33,6 +37,7 @@ const person2: Person = {
   },
 };
 
-console.log(
-  `this is typescript practice for ${person.name} and ${person2.name} who is ${person.age} and ${person2.age} years old`,
-);
+greet(person.name, person.age);
+// console.log(
+//   `this is typescript practice for ${person.name} and ${person2.name} who is ${person.age} and ${person2.age} years old`,
+// );
