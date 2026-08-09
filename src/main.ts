@@ -38,11 +38,15 @@ const person2: Person = {
 };
 
 greet(person.name, person.age);
-// `console.log(
-//   `this is typescript practice for ${person.name} and ${person2.name} who is ${person.age} and ${person2.age} years old`,
-// );`
+// console.log(
+//   `this is typescript practice for ${person.name} and
+// ${person2.name} who is ${person.age} and ${person2.age} years old`,
+// );
 
 // optional parameters
 function printNameAndAge(name: string, age?: number) {
   console.log(`Name: ${name}, Age: ${age || "N/A"} years old`);
 }
+
+printNameAndAge("garf");
+printNameAndAge(person2.name);
