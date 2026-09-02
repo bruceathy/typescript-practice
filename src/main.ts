@@ -10,9 +10,9 @@ type Person = {
   };
 };
 
-function greet(name: string, age: number) {
-  console.log(`Hello, ${name}! You are ${age} years old.`);
-}
+// function greet(name: string, age: number) {
+//   console.log(`Hello, ${name}! You are ${age} years old.`);
+// }
 
 const person: Person = {
   name: "John Doe",
