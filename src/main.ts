@@ -10,9 +10,9 @@ type Person = {
   };
 };
 
-// function greet(name: string, age: number) {
-//   console.log(`Hello, ${name}! You are ${age} years old.`);
-// }
+function greet(name: string, age: number) {
+  console.log(`Hello, ${name}! You are ${age} years old.`);
+}
 
 const person: Person = {
   name: "John Doe",
@@ -38,10 +38,10 @@ const person2: Person = {
 };
 
 greet(person.name, person.age);
-// console.log(
-//   `this is typescript practice for ${person.name} and
-// ${person2.name} who is ${person.age} and ${person2.age} years old`,
-// );
+console.log(
+  `this is typescript practice for ${person.name} and
+${person2.name} who is ${person.age} and ${person2.age} years old`,
+);
 
 // optional parameters
 function printNameAndAge(name: string, age?: number) {
