@@ -21,7 +21,7 @@ const person: Person = {
   address: {
     street: "123 Main St",
     city: "Anytown",
-    country: "USA",dd
+    country: "USA",
     zipCode: 12345,
   },
 };
