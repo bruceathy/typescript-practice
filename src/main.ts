@@ -5,6 +5,11 @@ type Person = {
 };
 
 const person: Person = {
-  name: "John Doe",
-  skillLevel: "expert",
+  name: "John",
+  skillLevel: "intermediate",
 };
+printSkillLevel(person.skillLevel);
+
+function printSkillLevel(skillLevel: "beginner" | "intermediate" | "expert") {
+  console.log(skillLevel);
+}
