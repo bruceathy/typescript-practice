@@ -1,4 +1,4 @@
-function getSecond(array: number[]) {
+function getSecond<ArrayType>(array: ArrayType[]) {
   return array[1];
 }
 
