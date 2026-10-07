@@ -10,5 +10,3 @@ const todo: Todo = {
 
 let id: string | number = 7;
 id = "7";
-
-console.log(todo);
