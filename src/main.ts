@@ -1,12 +1,8 @@
-type Todo = {
-  name: string;
-  status: "open" | "closed";
+const person = {
+  name: "John",
+  age: 30,
 };
 
-const todo: Todo = {
-  name: "Learn Typescript",
-  status: "open",
-};
-
-let id: string | number = 7;
-id = "7";
+Object.entries(person).forEach(([key, value]) => {
+  console.log(`${key}: ${value}`);
+});
