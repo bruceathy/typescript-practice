@@ -1,8 +1,2 @@
-const person = {
-  name: "John",
-  age: 30,
-};
-
-Object.entries(person).forEach(([key, value]) => {
-  console.log(`${key}: ${value}`);
-});
+const input = document.querySelector(".input");
+console.log(input?.value);
