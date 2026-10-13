@@ -1,2 +1,2 @@
 const input = document.querySelector(".input");
-console.log(input?;
+console.log(input?.value);
