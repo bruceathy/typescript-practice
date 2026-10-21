@@ -1,2 +1,5 @@
-const input = document.querySelector<HTMLInputElement>(".input");
-console.log(input?.value);
+const a = new Map<string, number>();
+
+a.set("a", 1);
+a.set("b", 2);
+a.set("c", 3);
