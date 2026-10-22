@@ -1,5 +1,19 @@
-const a = new Map<string, number>();
+type Todo = {
+  id: number;
+  name: string;
+  completed: boolean;
+};
 
-a.set("a", 1);
-a.set("b", 2);
-a.set("c", 3);
+type NewTodo = {
+  name: string;
+  completed: boolean;
+};
+
+function saveToDo(todo: NewTodo) {
+  return { ...todo, id: crypto.randomUUID };
+}
+
+function renderToDo(todo: Todo) {
+  const div = document.createElement("div");
+  div.id = todo.id;
+}
