@@ -1,16 +1,14 @@
 type Todo = {
-  id: number;
+  id: string;
   name: string;
+  status: string;
   completed: boolean;
 };
 
-type NewTodo = {
-  name: string;
-  completed: boolean;
-};
+type NewTodo = Omit<Todo, "id">;
 
-function saveToDo(todo: NewTodo) {
-  return { ...todo, id: crypto.randomUUID };
+function saveToDo(todo: NewTodo): Todo {
+  return { ...todo, id: crypto.randomUUID() };
 }
 
 function renderToDo(todo: Todo) {
