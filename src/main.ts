@@ -1,17 +1,9 @@
 type Todo = {
-  id: string;
-  name: string;
-  status: string;
-  completed: boolean;
+  title: string;
+  priority: "High" | "Medium" | "Low";
+  isComplete: boolean;
+  description?: string;
+  dueDate: Date | string;
 };
 
-type NewTodo = Omit<Todo, "id">;
-
-function saveToDo(todo: NewTodo): Todo {
-  return { ...todo, id: crypto.randomUUID() };
-}
-
-function renderToDo(todo: Todo) {
-  const div = document.createElement("div");
-  div.id = todo.id;
-}
+function extendTodo(todo: Todo) {}
